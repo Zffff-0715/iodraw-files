@@ -252,9 +252,6 @@
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-61" value="② 机器学习建模训练" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="358" y="1259" width="419" height="507" as="geometry" />
         </mxCell>
-        <mxCell id="01sxeaVJ5ycw0cpJZAuX-62" value="① 数据准备与特征工程" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="456" y="710" width="480" height="499" as="geometry" />
-        </mxCell>
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-63" value="混合不锈钢数据库&#xa;(102行 → 剔除18条难样本 → 84行)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="539" y="735" width="245" height="84" as="geometry" />
         </mxCell>
@@ -266,9 +263,6 @@
         </mxCell>
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-66" value="GMM数据增强&#xa;(按目标差异化)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="522" y="1118" width="168" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="01sxeaVJ5ycw0cpJZAuX-67" value="LightGBM + RFE特征选择 + Optuna调参" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="481" y="1284" width="249" height="66" as="geometry" />
         </mxCell>
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-68" value="k值扫描寻优" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="449" y="1400" width="148" height="48" as="geometry" />
@@ -326,11 +320,12 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="01sxeaVJ5ycw0cpJZAuX-84" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.31;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-67" target="01sxeaVJ5ycw0cpJZAuX-68">
+        <mxCell id="01sxeaVJ5ycw0cpJZAuX-84" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.31;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" target="01sxeaVJ5ycw0cpJZAuX-68">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="523" y="1375" />
             </Array>
+            <mxPoint x="558.19" y="1350" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-85" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-68" target="01sxeaVJ5ycw0cpJZAuX-69">
@@ -384,9 +379,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="01sxeaVJ5ycw0cpJZAuX-94" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-66" target="01sxeaVJ5ycw0cpJZAuX-67">
+        <mxCell id="01sxeaVJ5ycw0cpJZAuX-94" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-66">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+            <mxPoint x="605.5" y="1284" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="01sxeaVJ5ycw0cpJZAuX-95" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.67;entryY=0;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-70" target="01sxeaVJ5ycw0cpJZAuX-73">
@@ -417,7 +413,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="01sxeaVJ5ycw0cpJZAuX-99" value="数据回流与模型重训" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.22;entryX=0.69;entryY=1;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-80" target="01sxeaVJ5ycw0cpJZAuX-67">
+        <mxCell id="01sxeaVJ5ycw0cpJZAuX-99" value="数据回流与模型重训" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.22;entryX=0.69;entryY=1;rounded=0;" edge="1" parent="1" source="01sxeaVJ5ycw0cpJZAuX-80">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="793" y="2655" />
@@ -425,6 +421,7 @@
               <mxPoint x="688" y="1766" />
               <mxPoint x="688" y="1375" />
             </Array>
+            <mxPoint x="652.81" y="1350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
